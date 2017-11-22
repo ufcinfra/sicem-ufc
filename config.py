@@ -19,8 +19,11 @@ import os
 class Config:
     # Configurações sensíveis devem ser definidas como variáveis de ambiente!
 
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+
     # Usada nos processos de autenticação do Flask
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = 'kjdkhkhskjadhjkahkjdkaj2u897382jeb12iye812boe8912ge12be1y'
+    # SECRET_KEY = os.environ.get('SECRET_KEY')
 
     # Desabilitar encriptação por padrão
     SSL_DISABLE = True
